@@ -1,5 +1,5 @@
-package com.ai.SpringAIDemo.interfaces;
+package com.ai.springaidemo.interfaces;
 
-public class IChat{
-	
+public interface IChat{
+	String getResponse(String prompt);
 }
