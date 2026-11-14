@@ -1,0 +1,207 @@
+{
+  "info": {
+    "_postman_id": "1417ceb1-d6ab-40fb-9b08-455f1e5771a2",
+    "name": "j2ee - spring ai demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58338603",
+    "_collection_link": "https://go.postman.co/collection/58338603-1417ceb1-d6ab-40fb-9b08-455f1e5771a2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "ask ai",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "user",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "{{pass}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"prompt\": \"bạn khỏe không\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/ask-ai",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ask-ai"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "gen image",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"prompt\": \"ngôi nhà\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/gen-image",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "gen-image"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create recipe",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "user",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "5d3d2f70-b964-4ae1-abab-1601e60685d7",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"dietaryRestrictions\": \"ít đường\",\r\n    \"cuisine\":\"Việt Nam\",\r\n    \"ingredients\": \"dầu oliu, khoai tây\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/recipe-creator",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "recipe-creator"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "tts",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "user",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "{{pass}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"text\": \"i am john\",\r\n    \"speed\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/audio/tts",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "audio",
+            "tts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "stt",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "user",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "{{pass}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/audio/stt",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "audio",
+            "stt"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "pass",
+      "value": ""
+    }
+  ]
+}

@@ -65,7 +65,16 @@
 	        <groupId>com.qxotic</groupId>
 	        <artifactId>jinfer-inflect2</artifactId>
 	    </dependency>
-
+	    
+	    <!-- tăng tốc tts -->
+		<dependency>
+		    <groupId>com.qxotic</groupId>
+		    <artifactId>jam-native</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>com.qxotic</groupId>
+		    <artifactId>jam-vector</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

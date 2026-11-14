@@ -25,7 +25,10 @@ public class AudioController {
 		@Valid
 		@RequestBody TtsRequest request
 	) {
-	    byte[] wavBytes = audioService.textToSpeech(request.getText(), request.getSpeed());
+	    byte[] wavBytes = audioService.textToSpeech(
+	    	request.getText(),
+	    	request.getSpeed()
+	    );
 
 	    return ResponseEntity.ok()
 	            .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"output.wav\"")
