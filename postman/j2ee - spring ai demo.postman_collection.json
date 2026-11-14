@@ -196,6 +196,49 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "tool chat",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "user",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "{{pass}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "// {\r\n//     \"prompt\": \"Hãy lấy thông tin nhân viên có id là emp1001\"\r\n// }\r\n{\r\n    \"prompt\": \"Hãy đăng ký nghỉ phép cho nhân viên id là emp1001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/chat",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "chat"
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "variable": [
