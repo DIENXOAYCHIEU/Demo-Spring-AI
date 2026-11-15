@@ -219,7 +219,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "// {\r\n//     \"prompt\": \"Hãy lấy thông tin nhân viên có id là emp1001\"\r\n// }\r\n{\r\n    \"prompt\": \"Hãy đăng ký nghỉ phép cho nhân viên id là emp1001\"\r\n}",
+          "raw": "{\r\n    \"prompt\": \"hello\"\r\n}\r\n\r\n// {\r\n//     \"prompt\": \"Hãy lấy thông tin nhân viên có id là emp1001\"\r\n// }\r\n\r\n// {\r\n//     \"prompt\": \"Bây giờ là mấy giờ\"\r\n// }\r\n\r\n// {\r\n//     \"prompt\": \"Hãy đăng ký nghỉ phép cho nhân viên id là emp1001\"\r\n// }\r\n\r\n// {\r\n//     \"prompt\": \"Giới thiệu về spring ai\"\r\n// }\r\n\r\n// {\r\n//     \"prompt\": \"Hãy lấy danh sách nhân viên đăng ký nghỉ phép\"\r\n// }\r\n",
           "options": {
             "raw": {
               "language": "json"

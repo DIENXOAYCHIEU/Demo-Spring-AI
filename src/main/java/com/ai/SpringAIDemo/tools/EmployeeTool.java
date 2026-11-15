@@ -40,4 +40,16 @@ public class EmployeeTool {
         log.info("Applying leave for employee: {} on date: {}", empId, date);
         employeeService.applyLeave(empId, date);
     }
+
+	@Tool(description = "Lấy toàn bộ danh sách và lịch nghỉ phép của tất cả nhân viên công ty Phuc trong hệ thống (không cần truyền ngày).")
+	public List<Employee> getAllLeaves() {
+	    log.info("Getting all employees on leave");
+	    List<Employee> allLeaves = employeeService.getAllEmployeesOnLeave();
+	    
+	    if (allLeaves.isEmpty()) {
+	        return List.of();
+	    }
+	    
+	    return allLeaves;
+	}
 }
